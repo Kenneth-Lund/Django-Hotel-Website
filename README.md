@@ -1,3 +1,3 @@
 # django website
 
-![alt text](https://raw.github.com/Kenneth-Lund/Django-Hotel-Website.git/readme_image.png)
+![alt text](https://github.com/Kenneth-Lund/Django-Hotel-Website/blob/master/readme_image.png)
