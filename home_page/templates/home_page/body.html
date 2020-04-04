@@ -1,0 +1,80 @@
+{% include "./header.html" %}
+{% load staticfiles %}
+
+
+<div class="home_body">
+                
+    <div class="hotel_filter_outer">
+
+        <div class="checkbox_filter">
+            <h2>Filter</h2>
+            <div class="checkbox_filter_inner">
+
+            </div>
+            <h2>Dates</h2>
+            <div class="calendar_filter_inner">
+
+            </div>
+        </div>
+
+        <div class="calendar_filter"></div>
+
+    </div>
+    <div class="hotel_preview_outer">
+
+        <div class="preview_inner_large">
+
+            {% include "./previewImage.html" %}
+
+        </div>
+
+        <div class="preview_inner_table">
+
+            {% include "./previewTable.html" %}
+
+        </div>
+    </div>
+
+    <div class="hotel_table_outer">
+        
+        <ul class="room-table">
+            
+            {% for room in room_data %}
+
+                <li id={{ room.id }} class="room-cell-outer"  >
+
+                    <div class="room-cell">
+
+                        <div class="room-thumbnail">
+                           
+                            <img src="{% static room.thumbnail %}"  alt="Logo" id={{ room.id }}></img>
+                        </div>
+                    
+                        <div class="cell-details-outer">
+                    
+                            <div class="cell-details-inner-text">
+                                
+                                <br></br>
+                                <br></br>
+                                <div>Test {{ room.hotelName }} </div>
+                                <div>Beds {{ room.beds }} Baths {{ room.baths }}</div>
+                                <div>{{ room.price  }}</div>
+                    
+                            </div>
+                    
+                            <div class="cell-details-inner-button">
+                    
+                                <button class="inner-button" type="button">Book Now</button>
+                            </div>
+                    
+                        </div>
+                    </div>
+
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/test.js' %}"></script>

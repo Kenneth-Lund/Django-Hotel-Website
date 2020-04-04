@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<ul class="horizontal-preview-table">
+    {% for preview_image in preview_list %}
+        <l1 class="preivew-cell-outer">
+            <div class="preview-cell">
+                <div class="preview-cell-image">
+                    <img src="{% static preview_image %}"  class="preview-image" alt="Logo" ></img>
+                </div>
+            </div>
+        </l1>
+    {% endfor%}
+</ul>

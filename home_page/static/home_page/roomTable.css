@@ -1,0 +1,79 @@
+.room-table {
+    width: 100%;
+    height: 750px;
+    overflow: hidden; 
+    overflow-y: scroll;
+}
+
+.room-table li {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.room-table li:first-child {
+    margin-top: 0px;
+}
+.room-table li:last-child{
+    margin-bottom: 20px;
+}
+
+.cell-details-outer {
+    float: right;
+    width: 49%;
+    height: 200px;
+}
+
+
+.cell-details-inner-text div {
+    overflow: hidden;
+}
+
+.cell-details-inner-text {
+    height: 70%;
+    width: 90%;
+    background-color: transparent;
+}
+.cell-details-inner-button {
+    clear: both;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+
+
+.inner-button {
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font: 'Tahoma, Geneva, sans-serif';
+    background-color: Transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+
+.room-thumbnail {
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 190px;
+    width: 50%;
+}
+
+.room-thumbnail img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    flex-shrink: 0;
+    min-width: 0;
+    min-height: 0;
+}
